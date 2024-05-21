@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Pagamento Material</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pagamento de Material</h1>        
+    </header>
+
+    <main>
+        <form class="formulario">
+            <label for="partNumber">Part Number:</label>
+            <input type="text" id="partNumber" name="partNumber" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="lote">Lote:</label>
+            <input type="text" id="lote" name="lote" required>
+
+            <button type="button" id="adicionar" onclick="adicionarItem()">Adicionar</button>
+        </form>
+    </main>
+
+    <h2>Histórico</h2>
+        <table id="tabela-historico">
+            <thead>
+                <tr>
+                    <th>Part Number</th>
+                    <th>Quantidade</th>
+                    <th>Lote</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    <button type="button" id="limpar" onclick="limparHistorico()">Limpar Histórico</button>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>
+
+
